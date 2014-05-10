@@ -7,4 +7,4 @@ jekyll test page
 ## Running Jekyll
 Make site available at [http://localhost:4000](http://localhost:4000)
 
-    bundle exec jekyll serve
+    jekyll serve
