@@ -34,6 +34,25 @@ a:visited { color: #205caa; }
   zoom: 1;
 }
 
+.helperwrap:before,
+.helperwrap:after { content:""; display:table; }
+.helperwrap:after { clear: both; }
+.helperwrap {
+  border-bottom: 1px solid #e8e8e8;
+  max-width: 800px;
+  margin: 0 auto;
+  zoom: 1;
+}
+
+.footerwrap:before,
+.footerwrap:after { content:""; display:table; }
+.footerwrap:after { clear: both; }
+.footerwrap {
+  border-top: 1px solid #e8e8e8;
+  max-width: 800px;
+  margin: 0 auto;
+  zoom: 1;
+}
 
 /* Layout Styles */
 /* ----------------------------------------------------------*/
@@ -41,8 +60,6 @@ a:visited { color: #205caa; }
 /* Site header */
 
 .site-header {
-  border-top: 5px solid #333;
-  border-bottom: 1px solid #e8e8e8;
   min-height: 56px;
   background-color: white;
 }
@@ -76,7 +93,6 @@ a:visited { color: #205caa; }
 /* Site footer */
 
 .site-footer {
-  border-top: 1px solid #e8e8e8;
   padding: 30px 0;
 }
 
