@@ -98,8 +98,9 @@ a:visited { color: #205caa; }
 
 .social-icons {
   float:right;
-  padding: 10px 30px;
+  padding: 10px 0;
 }
+
 .footer-heading {
   font-size: 18px;
   font-weight: 300;
