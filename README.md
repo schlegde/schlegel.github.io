@@ -1,7 +1,7 @@
-jekyll test page
-
 ## Setup
 
+    brew install rbenv
+    gem install bundler
     bundle install
 
 ## Running Jekyll
