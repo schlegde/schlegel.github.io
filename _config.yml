@@ -1,11 +1,33 @@
-# Site settings
-title: xorrr blog
-email: your-email@domain.com
-description: "Musings of a guy"
-baseurl: ""
-url: "http://xorrr.github.io"
-username: "xorrr"
+# Basic
+name:               "Axel"
 
-# Build settings
-markdown: kramdown
-permalink: pretty
+# URL
+baseurl:            ""
+permalink:          pretty
+
+# Markdown
+markdown:           rdiscount
+
+# Navigation
+nav:
+  - name:           "About"
+    href:           "/about"
+
+# Sass
+sass:
+  style:            :compressed
+
+# Scopes
+defaults:
+  -
+    scope:
+      path:         ""
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      path:         ""
+      type:         "posts"
+    values:
+      layout:       "post"
