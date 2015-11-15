@@ -29,7 +29,7 @@ public class Wrapper {
 
 This is usually first met with uncertainty. Isn't the primary use case of mocks to fake classes that talk to databases or the network? Well, lets look at the benefits of wrapping these dependencies:
 
-* Your design will be decoupled from the external dependency, which will make it easier to replace the dependency and to defer the decision which library, if one at all, you want to use.
+* Your design will be decoupled from the external dependency, which will make it easier to replace the dependency or to defer the decision which library, if one at all, you want to use.
 * Creating these wrappers will allow you to hide the complexity of the library. Maybe you only need three out of the twenty methods the interface offers. Which means you only need to wrap these three.
 * You will be able to use your domain language as described [here](http://blog.8thlight.com/eric-smith/2011/10/27/thats-not-yours.html). Basically it shows how by using the opportunity to wrap the external object you can let it express your internal domain by choosing the classname and the methodnames of the methods you decide to wrap.
 * In some cases only wrapping the objects will make mocking possible. [Mockito](http://mockito.org/) will not allow you to verify calls on final methods. By wrapping these final methods you can verify interactions with them without having to use tools such as [PowerMock](https://github.com/jayway/powermock).
