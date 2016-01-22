@@ -25,7 +25,7 @@ The following code can also be found on [GitHub](https://github.com/xorrr/github
 ## Create a basic server
 
 First [register](https://github.com/settings/applications/new) a new OAuth application.
-Use `http://localhost:4567/callback` as the *Authorization callback URL*. The Client ID and Client Secretshould be stored as environment variables:
+Use `http://localhost:4567/callback` as the *Authorization callback URL*. The Client ID and Client Secret should be stored as environment variables:
 
 `export GH_BASIC_CLIENT_ID=97xor4b13d58cc5a5b42`
 
