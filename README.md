@@ -12,6 +12,10 @@ Make site available at [http://localhost:4000](http://localhost:4000)
 
     jekyll serve
 
+## Running tests
+
+    brew install tidy-html5
+
 ## Troubleshooting
 ### Nokogiri install fails on OSX
 
