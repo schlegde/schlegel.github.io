@@ -24,7 +24,7 @@ The quickest way to pass this test would be to let the function return a hardcod
 (define (add-square-of-largest-two first-num second-num third-num) 0)
 {% endhighlight %}
 
-Now we enter the refactoring phase. The specified function signature already breaks a clean code principle. We should avoid having more than two arguments for a function. If these three arguments all belong to each other to warrant the need to be passed together then they shoul be put into another construct. We will choose a list and refactor the code as follows
+Now we enter the refactoring phase. The specified function signature already breaks a clean code principle. We should avoid having more than two arguments for a function. If these three arguments all belong to each other to warrant the need to be passed together then they should be put into another construct. We will choose a list and refactor the code as follows
 
 {% highlight scheme %}
 (assert-that "added square of largest two in 0,0,0 is 0"
@@ -176,4 +176,4 @@ Let's review the finished code
 
 If you want you can compare the solution with [others](http://community.schemewiki.org/?sicp-ex-1.3).
 
-By using the test driven approach we have covered a lot of groud which should provide you a basic understanding of Scheme.
+By using the test driven approach we have covered a lot of ground which should provide you a basic understanding of Scheme.
