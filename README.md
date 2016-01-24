@@ -7,6 +7,8 @@ My blog at
     gem install bundler
     bundle install
 
+    brew install tidy-html5
+
 ## Running Jekyll
 Make site available at [http://localhost:4000](http://localhost:4000)
 
@@ -14,7 +16,7 @@ Make site available at [http://localhost:4000](http://localhost:4000)
 
 ## Running tests
 
-    brew install tidy-html5
+    ./test/spell_checker.sh
 
 ## Troubleshooting
 ### Nokogiri install fails on OSX
