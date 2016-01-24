@@ -8,7 +8,7 @@ tags: []
 ---
 With the help of a technique called _creating a seam_, or _subclass and override_ we can make almost every piece of code testable.
 
-The first time i've seen this practice was in an awesome screencast of Sandro Mancuso called [Testing and Refactoring Legacy Code](https://www.youtube.com/watch?v=_NnElPO5BU0). All the code snippets in this post are also taken from his screencast and shortened.
+The first time I've seen this practice was in an awesome screencast of Sandro Mancuso called [Testing and Refactoring Legacy Code](https://www.youtube.com/watch?v=_NnElPO5BU0). All the code snippets in this post are also taken from his screencast and shortened.
 
 The technique is used to help cover existing functionality with tests before we start refactoring it. Remember:
 
@@ -25,7 +25,7 @@ public List<Trip> getCurrentUsersTrips() {
 }
 {% endhighlight %}
 
-We have no way to mock the `UserSession` and let the `getLoggedInUser()` method return a predefined user in our test. To do this we would have to change the way `UserSession` is used and thereby change the architecture of the program. As we try to test in small steps we will resist the urge to remove the static method calls and inject the UserSession into our class under test. Covering the `UserSession.getLoggedInUser()` will be achieved via a seam. Let's extract the method call into a protected method:
+We have no way to mock the `UserSession` and let the `getLoggedInUser()` method return a predefined user in our test. To do this we would have to change the way `UserSession` is used and thereby change the architecture of the program. As we try to test in small steps we will resist the urge to remove the static method calls and inject the `UserSession` into our class under test. Covering the `UserSession.getLoggedInUser()` will be achieved via a seam. Let's extract the method call into a protected method:
 
 {% highlight java %}
 protected User getLoggedInUser() {
@@ -33,7 +33,7 @@ protected User getLoggedInUser() {
 }
 {% endhighlight %}
 
-In our testclass we will then create a testable implementation of our class under test:
+In our test file we will then create a testable implementation of our class under test:
 
 {% highlight java %}
 private class TestableTripService extends TripService {
@@ -44,7 +44,7 @@ private class TestableTripService extends TripService {
 }
 {% endhighlight %}
 
-Our `getLoggedInUser()` method was overriden. The rest of the implementation stays the same. Now we can return a `User` of our choice without the use of Mocks.
+Our `getLoggedInUser()` method was overridden. The rest of the implementation stays the same. Now we can return a `User` of our choice without the use of Mocks.
 
 This will work as long as the class under test is not `final`. Since `final` classes can't be subclassed.
 

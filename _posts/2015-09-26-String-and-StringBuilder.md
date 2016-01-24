@@ -125,4 +125,4 @@ The official docs [support that statement](http://docs.oracle.com/javase/specs/j
 
 That being said, if performance is an issue you should use `StringBuilder` when constructing Strings inside of loops. The compiler won't optimize this.
 
-Nevertheless, if the coding standards for the project dictates to use `StringBuilder` to e.g. implement the `toString()` method you can automate this in eclipse by using `Generate toString()...` and change the codestyle to use `StringBuilder/StringBuffer`.
+Nevertheless, if the coding standards for the project dictates to use `StringBuilder` to e.g. implement the `toString()` method you can automate this in eclipse by using `Generate toString()...` and change the code style to use `StringBuilder/StringBuffer`.

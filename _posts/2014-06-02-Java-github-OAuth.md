@@ -25,11 +25,12 @@ The following code can also be found on [GitHub](https://github.com/xorrr/github
 ## Create a basic server
 
 First [register](https://github.com/settings/applications/new) a new OAuth application.
-Use `http://localhost:4567/callback` as the *Authorization callback URL*. The Client ID and Client Secretshould be stored as environment variables:
+Use `http://localhost:4567/callback` as the *Authorization callback URL*. The Client ID and Client Secret should be stored as environment variables:
 
-`export GH_BASIC_CLIENT_ID=97xor4b13d58cc5a5b42`
-
-`export GH_BASIC_SECRET_ID=553foobd8f4c06c211232barbaze15e988405b42`
+{% highlight bash %}
+export GH_BASIC_CLIENT_ID=97xor4b13d58cc5a5b42
+export GH_BASIC_SECRET_ID=553foobd8f4c06c211232barbaze15e988405b42
+{% endhighlight %}
 
 Create the template `index.ftl`:
 {% highlight html %}
@@ -88,7 +89,7 @@ get("/", (request, response) -> {
         }, new FreeMarkerTemplateEngine());
 {% endhighlight %}
 
-Create the callback route and access the provided Sessioncode (`code`):
+Create the callback route and access the provided session code (`code`):
 
 {% highlight java %}
 get("/callback",(request, response) -> {
@@ -96,7 +97,7 @@ get("/callback",(request, response) -> {
 });
 {% endhighlight %}
 
-Use the Sessioncode to
+Use the session code to
 
 {% highlight java %}
 String accessToken = Unirest.post("https://github.com/login/oauth/access_token")
