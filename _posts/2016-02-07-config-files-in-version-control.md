@@ -61,7 +61,7 @@ The best case would be if you already have a `run.sh` script which hides how the
 {% highlight bash %}
 #!/bin/sh
 
-npm run
+npm start
 {% endhighlight %}
 
 We can extend it to generate the `config.json` using the environment variables. Lets first make sure the environment variables are set when starting the script.
