@@ -6,7 +6,7 @@ baseurl:            ""
 permalink:          pretty
 
 # Markdown
-markdown:           rdiscount
+markdown:           kramdown
 
 # Navigation
 nav:
