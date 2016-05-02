@@ -3,11 +3,9 @@ My blog at
 
 ## Setup
 
-    brew install rbenv
+    brew install rbenv tidy-html5 aspell
     gem install bundler
     bundle install
-
-    brew install tidy-html5
 
 ## Running Jekyll
 Make site available at [http://localhost:4000](http://localhost:4000)
