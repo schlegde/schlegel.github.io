@@ -12,7 +12,7 @@ The first time I've seen this practice was in an awesome screencast of Sandro Ma
 
 The technique is used to help cover existing functionality with tests before we start refactoring it. Remember:
 
-<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">If your &quot;refactoring&quot; breaks things, it&#39;s not refactoring</p>&mdash; Jason Yip (@jchyip) <a href="https://twitter.com/jchyip/status/664469905387974656">November 11, 2015</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p lang="en" dir="ltr">If your &quot;refactoring&quot; breaks things, it&#39;s not refactoring</p>&mdash; Jason Yip (@jchyip) <a href="https://twitter.com/jchyip/status/664469905387974656">November 11, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Let's say we have a static call inside a method which we want to unit test.
@@ -50,7 +50,7 @@ This will work as long as the class under test is not `final`. Since `final` cla
 
 But beware, these seams should not stay in your codebase for long. Ultimately they should be replaced with a design that does not need seams. In the example above this would happen by avoiding static methods and using dependency injection. Creating a seam should only be regarded as an intermediary step.
 
-<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">When you use legacy code testing techniques to test-drive your designs, you get legacy code. This seems obvious to me.</p>&mdash; ☕ J. B. Rainsberger (@jbrains) <a href="https://twitter.com/jbrains/status/672669150003798016">December 4, 2015</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p lang="en" dir="ltr">When you use legacy code testing techniques to test-drive your designs, you get legacy code. This seems obvious to me.</p>&mdash; ☕ J. B. Rainsberger (@jbrains) <a href="https://twitter.com/jbrains/status/672669150003798016">December 4, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 It's a powerful technique. I've also seen it misused in a way to replace multiple lines of code at once, especially in methods that have multiple responsibilities and are often 100 lines and more in length. Please restrict their use to cases as the one above with the `UserSession`.
