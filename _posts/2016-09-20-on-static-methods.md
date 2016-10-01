@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "On Static Methods"
-date:   2016-07-27 23:41:33
+date:   2016-09-20 23:41:33
 description: ""
 category:
 tags: []
