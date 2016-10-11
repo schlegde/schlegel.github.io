@@ -20,4 +20,4 @@ I believe one of the best answers to the discussion was provided by Misko Hevery
 
 I agree. There are usually way more important things to discuss in a team than whether or not to use some controversial features of Java.
 
-Additionally, by avoiding the `static` keyword, we have evaded the [Evil](http://c2.com/cgi/wiki?SingletonsAreEvil) or [Stupid](https://sites.google.com/site/steveyegge2/singleton-considered-stupid) Singleton, which must [Die](http://www.yegor256.com/2016/06/27/singletons-must-die.html) from our codebase and improved testability even further.
+Additionally, by avoiding the `static` keyword, we have evaded the [Evil](http://c2.com/cgi/wiki?SingletonsAreEvil) or [Stupid](https://sites.google.com/site/steveyegge2/singleton-considered-stupid) Singleton, which must [Die](http://www.yegor256.com/2016/06/27/singletons-must-die.html), from our codebase and thus have improved testability even further.
