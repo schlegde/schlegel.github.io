@@ -6,7 +6,9 @@ description: ""
 category:
 tags: []
 ---
-Recently I got asked by a co-worker on how he would go about testing the invocation of a static method in some legacy codebase. Not as easy as one might guess initially. We went for the [Subclass and Override Technique]({% post_url 2015-12-07-testing-java-legacy-code-with-seams %}). Of course a conversation on whether `static` should be used at all. After all you need special techniques or tools such as [PowerMock](https://github.com/jayway/powermock) to test them or create wrappers as described in [Don't Mock What You Do Not Own]({% post_url 2015-11-15-do-not-mock-what-you-do-not-own %}).
+Recently I got asked by a co-worker on how he would go about testing the invocation of a static method in some legacy codebase. Not as easy as one might guess initially. We went for the [Subclass and Override Technique]({% post_url 2015-12-07-testing-java-legacy-code-with-seams %}). Of course a conversation on whether `static` should be used at all ensues...
+
+After all you need special techniques or tools such as [PowerMock](https://github.com/jayway/powermock) to test them or create wrappers as described in [Don't Mock What You Do Not Own]({% post_url 2015-11-15-do-not-mock-what-you-do-not-own %}).
 
 The discussion on `static` has been had multiple times all over the internet. The answer is usually the following:
 
