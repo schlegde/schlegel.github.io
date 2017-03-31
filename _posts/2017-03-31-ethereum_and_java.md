@@ -15,7 +15,7 @@ This post requires knowledge of what a Smart Contract is and how to deploy one.
 
 To learn why we will probably use a library for interfacing with the Smart Contract a basic understanding of the usage of [JSON-RPC](https://github.com/ethereum/wiki/wiki/JSON-RPC) in Ethereum is necessary.
 
-Let's unveil the supposed magic behind what almost all Ethereum libraries do to interact with the blockchain. Suppose we need to know the `gasLimit` (maximum amount of computational effort the transactions in a block are allowed to have) of the lastest block. Using [curl](https://curl.haxx.se/) and piping its result to a json parser such as [jq](https://stedolan.github.io/jq/) would, considering we run an ethereum node on localhost port 8545, look as follows
+Let's unveil the supposed magic behind what almost all Ethereum libraries do to interact with the blockchain. Suppose we need to know the `gasLimit` (maximum amount of computational effort the transactions in a block are allowed to have) of the latest block. Using [curl](https://curl.haxx.se/) and piping its result to a JSON parser such as [jq](https://stedolan.github.io/jq/) would, considering we run an Ethereum node on localhost port 8545, look as follows
 
 {% highlight bash %}
 curl --silent -X POST -H "Content-Type: application/json"\
@@ -41,7 +41,7 @@ web3j.ethGetBlockByNumber(DefaultBlockParameter.valueOf("latest"),
   true).send().getBlock().getGasLimit();
 {% endhighlight %}
 
-Still a lot of steps, and from a software-engineering perspective a violation of the [Law of demeter](https://en.wikipedia.org/wiki/Law_of_Demeter), yet less error prone and more convenient. Additionally, if our implementation depends on the funtionality above we will most likely create an abstraction such as `ethereumGateway.currentGasLimit()` anyway.
+Still a lot of steps, and from a software-engineering perspective a violation of the [Law of Demeter](https://en.wikipedia.org/wiki/Law_of_Demeter), yet less error prone and more convenient. Additionally, if our implementation depends on the functionality above we will most likely create an abstraction such as `ethereumGateway.currentGasLimit()` anyway.
 
 # Using web3j
 
@@ -135,13 +135,13 @@ public void deliverables_can_be_delivered() throws Exception {
 }
 {% endhighlight %}
 
-Let's disect the code
+Let's di-sect the code
 
 {% highlight java %}
 Deliverables.load(address, web3j, credentials, gasPrice, gasLimit);
 {% endhighlight %}
 
-We load the contract by providing its `address` an instance of `web3j`, the `credentials` (an unlocked wallet file), the `gasPrice` and `gasLimit`. Be aware that `credentials`, `gasPrice` or `gasLimit` would not really be necessary if we only intented to read from the contract. For example when using the `statusFor` function. Query operations on a contract are free in as they do not need a transaction and thus have no gas cost.
+We load the contract by providing its `address` an instance of `web3j`, the `credentials` (an unlocked wallet file), the `gasPrice` and `gasLimit`. Be aware that `credentials`, `gasPrice` or `gasLimit` would not really be necessary if we only intended to read from the contract. For example when using the `statusFor` function. Query operations on a contract are free in as they do not need a transaction and thus have no gas cost.
 
 {% highlight java %}
 web3j.web3Sha3("CONTENTS").send().getResult();
@@ -173,7 +173,7 @@ Finally we query the contract for the state and verify our `Deliverable` has bee
 
 # Conclusion
 
-Having had a lot more experience with [web3.js](https://github.com/ethereum/web3.js) the _original_ library in Javascript it sometimes feels more tedious to work with it's sister library in Java.
+Having had a lot more experience with [web3.js](https://github.com/ethereum/web3.js) the _original_ library in JavaScript it sometimes feels more tedious to work with it's sister library in Java.
 
 As an example, if we want to use our account in web3.js we would write
 
@@ -189,4 +189,4 @@ Credentials c = WalletUtils.loadCredentials("somePassword", "wallets/UTC-2017-03
 
 Regardless, in the end it boils down to personal taste. Of course web3.js is older, more mature and has more users than web3j, thus in the future web3j will improve too in every aspect.
 
-As a sidenote, when thinking about the future of our application we should create an abstraction for any library or API we use. It will allow us to switch out the underlying implementation, without touching the modules containing the business logic, should we ever find a better way or library to interact with a smart contract. Furthermore it will enable us to use a somewhat different implementation of Smart Contracts such as the possible competitor on the Bitcoin blockchain [Rootstock](http://www.rsk.co/).
+As a side note, when thinking about the future of our application we should create an abstraction for any library or API we use. It will allow us to switch out the underlying implementation, without touching the modules containing the business logic, should we ever find a better way or library to interact with a smart contract. Furthermore it will enable us to use a somewhat different implementation of Smart Contracts such as the possible competitor on the Bitcoin blockchain [Rootstock](http://www.rsk.co/).
