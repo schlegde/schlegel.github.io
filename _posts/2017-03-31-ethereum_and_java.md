@@ -93,7 +93,7 @@ It will create a `.java` file with the following contents. Some parts are left f
 {% highlight java %}
 public final class Deliverables extends Contract {
   // [...]
-  Future<TransactionReceipt> store(Address id) {
+  public Future<TransactionReceipt> store(Address id) {
     Function function = new Function("store", Arrays.<Type>asList(id), Collections.<TypeReference<?>>emptyList());
     return executeTransactionAsync(function);
   }
