@@ -45,7 +45,7 @@ Still a lot of steps, and from a software-engineering perspective a violation of
 
 # Using web3j
 
-Let's take web3j for a spin to interact with a simple record keeping contract. What the contract does is keep track of some kind of `Deliverable`, which could be a shipping container. It makes use of access controls to only allow the owner of the contract to modify its state. We achieve this with the `onlyByOwner` _function modifier_. The owner can `store` a new Deliverable and also change its status to `delivered`. Using the shipping container example this means the container has reached is destination. Querying the contract for the status of a `Deliverable` is possible by anyone using the `statusFor` function. If the `status` of a `Deliverable` is _1_ we can consider it delivered.
+Let's take web3j for a spin to interact with a simple record keeping contract. What the contract does is keep track of some kind of `Deliverable`, which could be a shipping container. It makes use of access controls to only allow the owner of the contract to modify its state. We achieve this with the creation of a `onlyByOwner` _function modifier_. The owner can `store` a new Deliverable and also change its status to `delivered`. Using the shipping container example this means the container has reached is destination. Querying the contract for the status of a `Deliverable` is possible by anyone using the `statusFor` function. If the `status` of a `Deliverable` is _1_ we can consider it delivered.
 
 {% highlight javascript %}
 contract Deliverables {
@@ -67,7 +67,6 @@ contract Deliverables {
   }
 
   function store(address id) onlyByOwner {
-    if (msg.sender != owner) throw;
     deliverables[id] = Deliverable(id, 0);
   }
 
@@ -76,7 +75,6 @@ contract Deliverables {
   }
 
   function delivered(address id) onlyByOwner {
-    if (msg.sender != owner) throw;
     deliverables[id].status = 1;
   }
 }
