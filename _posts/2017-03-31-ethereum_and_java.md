@@ -187,4 +187,6 @@ Credentials c = WalletUtils.loadCredentials("somePassword", "wallets/UTC-2017-03
 
 Regardless, in the end it boils down to personal taste. Of course web3.js is older, more mature and has more users than web3j, thus in the future web3j will improve too in every aspect.
 
+There’s also ethereumJ, a Java implementation of the Ethereum protocol, meaning it includes mining capabilities and an implementation of the blockchain. web3j, calling itself lightweight, does not include these functionalities since they are not necessary for every user wanting to interface with smart contracts.
+
 As a side note, when thinking about the future of our application we should create an abstraction for any library or API we use. It will allow us to switch out the underlying implementation, without touching the modules containing the business logic, should we ever find a better way or library to interact with a smart contract. Furthermore it will enable us to use a somewhat different implementation of Smart Contracts such as the possible competitor on the Bitcoin blockchain [Rootstock](http://www.rsk.co/) or any other future Smart Contract ecosystem. Maybe even a boring database or both.
