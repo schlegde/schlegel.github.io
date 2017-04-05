@@ -139,7 +139,9 @@ Let's di-sect the code
 Deliverables.load(address, web3j, credentials, gasPrice, gasLimit);
 {% endhighlight %}
 
-We load the contract by providing its `address` an instance of `web3j`, the `credentials` (an unlocked wallet), the `gasPrice` and `gasLimit`. Be aware that `credentials`, `gasPrice` or `gasLimit` would not really be necessary if we only intended to read from the contract. For example when using the `statusFor` function. Query operations on a contract are free in as they do not need a transaction and thus have no gas cost.
+We load the contract by providing its `address` an instance of `web3j`, the `credentials` (an unlocked wallet), the `gasPrice` and `gasLimit`.
+
+Be aware that `credentials`, `gasPrice` or `gasLimit` would not really be necessary if we only intended to read from the contract. For example when using the `statusFor` function. Query operations on a contract are free in as they do not need a transaction and thus have no gas cost. The generated method requires these arguments though.
 
 {% highlight java %}
 web3j.web3Sha3("CONTENTS").send().getResult();
@@ -159,7 +161,7 @@ Next up we create the transaction to store the `Deliverable` on the blockchain a
 deliverables.delivered(deliverable).get();
 {% endhighlight %}
 
-Almost done we change the status of the `Deliverable` to delivered and, again, wait for the computation to complete.
+Almost done. We change the status of the `Deliverable` to delivered and, again, wait for the computation to complete.
 
 {% highlight java %}
 BigInteger result = deliverables.statusFor(deliverable).get()
@@ -190,3 +192,5 @@ Regardless, in the end it boils down to personal taste. Of course web3.js is old
 There’s also ethereumJ, a Java implementation of the Ethereum protocol, meaning it includes mining capabilities and an implementation of the blockchain. web3j, calling itself lightweight, does not include these functionalities since they are not necessary for every user wanting to interface with smart contracts.
 
 As a side note, when thinking about the future of our application we should create an abstraction for any library or API we use. It will allow us to switch out the underlying implementation, without touching the modules containing the business logic, should we ever find a better way or library to interact with a smart contract. Furthermore it will enable us to use a somewhat different implementation of Smart Contracts such as the possible competitor on the Bitcoin blockchain [Rootstock](http://www.rsk.co/) or any other future Smart Contract ecosystem. Maybe even a boring database or both.
+
+The post has been cross-posted on [Medium](https://medium.com/yopiter/interfacing-with-ethereum-smart-contracts-in-java-cf39b2e95b4e)
