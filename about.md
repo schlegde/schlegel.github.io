@@ -1,5 +1,5 @@
 ---
-title: About
+title: About - Axel Hodler
 layout: page
 permalink: /about/
 ---
