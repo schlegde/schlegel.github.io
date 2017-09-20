@@ -31,14 +31,17 @@ body {
       -ms-text-size-adjust: 100%;
 }
 
+.social-connections {
+  margin-bottom: 8px;
+}
+
+.social-link {
+  color: black;
+}
+
 a {
   color: #268bd2;
   text-decoration: none;
-  
-  &:hover,
-  &:focus {
-    text-decoration: underline;
-  }
 }
 
 h1, h2, h3, h4, h5, h6 {
