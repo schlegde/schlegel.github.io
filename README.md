@@ -17,8 +17,10 @@ Make site available at [http://localhost:4000](http://localhost:4000)
     ./test/spell_checker.sh
 
 ## Troubleshooting
-### Nokogiri install fails on OSX
+### Nokogiri install fails on OSX during bundle install
 
     brew install libxml2 libxslt
     brew install libiconv
     xcode-select --install
+
+Then run `bundle install` again
