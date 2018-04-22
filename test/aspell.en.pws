@@ -1,4 +1,4 @@
-personal_ws-1.1 en 98 
+personal_ws-1.1 en 105 
 runtime
 Shinkansen
 Meetup
@@ -31,6 +31,7 @@ Pryce
 endsWith
 toUpperCase
 Metz
+DigitalOcean
 JVM
 doesn
 Kata
@@ -47,7 +48,9 @@ Shibuya
 durations
 stdout
 javadoc
+DSL
 Akihabara
+Canaria
 blockchain
 matcher
 Rootstock
@@ -62,16 +65,19 @@ OID
 localhost
 PowerMock
 CrispyCrunch
+APIs
 API's
 ABI
 URI
 codebase
 getBytes
 Neko
+Grafana
 ajax
+Connascence
 JavaFX
-Unirest
 fakeAsync
+Unirest
 CoffeeScript
 Ethereum
 BDD
@@ -91,9 +97,10 @@ Relution
 Miyajima
 stitic
 Jez
-san
 OSX
+san
 OAuth
 Hyperdia
 StringBuilder
 json
+Weirich
