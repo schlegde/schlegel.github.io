@@ -126,3 +126,7 @@ To to get you started with the [Roman numerals Kata](http://codingdojo.org/kata/
 The retrospective at the end concluded everyone had a blast. The only negative point multiple participants mentioned was the use of plastic and paper cups instead of reusable ones but that one can surely be remedied.
 
 A big thank you to all the participants. I'm definitely looking forward to the 2019 edition.
+
+<blockquote class="twitter-tweet tw-align-center" data-lang="en-gb"><p lang="en" dir="ltr">Final retrospective at the beach. Such amazing weather and place. Thanks everybody for creating an amazing experience every year. See you again in 2019! <a href="https://t.co/PXm7uVaRu0">pic.twitter.com/PXm7uVaRu0</a></p>&mdash; Socracan (SoCraTes Canaries) (@socracan) <a href="https://twitter.com/socracan/status/985240938099433472?ref_src=twsrc%5Etfw">14 April 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
