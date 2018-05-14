@@ -1,5 +1,6 @@
-personal_ws-1.1 en 105 
+personal_ws-1.1 en 112 
 runtime
+WireMock
 Shinkansen
 Meetup
 Osherove
@@ -23,6 +24,7 @@ matchers
 IMDB
 Misko
 SICP
+CDCT
 userId
 testability
 cryptocurrency
@@ -32,12 +34,15 @@ endsWith
 toUpperCase
 Metz
 DigitalOcean
+CRM
 JVM
 doesn
 Kata
 reflog
 blockLAB
 Fieldings
+microservice
+JsonPath
 Hamcrest
 QA
 Nikko
@@ -47,8 +52,8 @@ disassembler
 Shibuya
 durations
 stdout
-javadoc
 DSL
+javadoc
 Akihabara
 Canaria
 blockchain
@@ -65,6 +70,7 @@ OID
 localhost
 PowerMock
 CrispyCrunch
+microservices
 APIs
 API's
 ABI
@@ -78,6 +84,7 @@ Connascence
 JavaFX
 fakeAsync
 Unirest
+SoCraTes
 CoffeeScript
 Ethereum
 BDD
