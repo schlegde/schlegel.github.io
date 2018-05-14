@@ -9,4 +9,4 @@ Both in life and during software development I enjoy short feedback loops, doing
 
 Besides coding I [read](https://www.goodreads.com/user/show/17724008-axel), keep up on the cryptocurrency ecosystem and cook almost every day. On the go I listen to a multitude of podcasts. If a movie has a rating above 7 on [IMDB](http://www.imdb.com/) I've most likely watched it.
 
-I'm a Co-Founder of [blockLAB Stuttgart](http://blocklab.de/) a network for Blockchain-Technology and Co-Organizer of the [Blockchain Technology Meetup Stuttgart](https://www.meetup.com/Blockchain-meetup/).
+Mid 2016 I co-founded [blockLAB Stuttgart](http://blocklab.de/) a network for Blockchain-Technology and the [Blockchain Technology Meetup Stuttgart](https://www.meetup.com/Blockchain-meetup/).
