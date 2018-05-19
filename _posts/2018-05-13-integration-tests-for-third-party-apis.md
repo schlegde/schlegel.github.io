@@ -25,7 +25,7 @@ The third approach is the one I usually encounter. With it we are neither subjec
 
 Still, one issue arises. We would not notice right away if there is a mismatch between the response in the `.json` file and the actual response. Aside from sloppiness and not checking in the correct response, e.g. with missing structure, we would also not notice directly whether the API producer breaks the API by removing fields. The latter might be improbable when working with Google APIs but is certainly possible with company internal systems or the API of smaller vendors.
 
-To mitigate the issues above a colleague introduced the idea of using [Consumer Driven Contract Testing (CDCT)](https://martinfowler.com/articles/consumerDrivenContracts.html) for third party API. Since we're already using it for API we do have control over the tooling was already in place and the developers were versed in its usage.
+To mitigate the issues above a [colleague](https://twitter.com/maverick_1601) introduced the idea of using [Consumer Driven Contract Testing (CDCT)](https://martinfowler.com/articles/consumerDrivenContracts.html) for third party API. Since we're already using it for API we do have control over the tooling was already in place and the developers were versed in its usage.
 
 CDCT is often called _TDD for microservices_ and used as such. The API consumers (e.g. an app or another microservice) writes contracts on how they require the API to behave and thus which fields of a response is used.
 
