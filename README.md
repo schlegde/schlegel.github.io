@@ -1,5 +1,5 @@
-My blog at
-[blog.hodler.co](http://blog.hodler.co)
+My page at
+[hodler.co](http://hodler.co)
 
 ## Setup
 
