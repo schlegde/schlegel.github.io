@@ -82,8 +82,8 @@ Grafana
 ajax
 Connascence
 JavaFX
-fakeAsync
 Unirest
+fakeAsync
 SoCraTes
 CoffeeScript
 Ethereum
@@ -111,3 +111,6 @@ Hyperdia
 StringBuilder
 json
 Weirich
+HTTPie
+artifactory
+socracan
