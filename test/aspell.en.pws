@@ -1,4 +1,4 @@
-personal_ws-1.1 en 112 
+personal_ws-1.1 en 115 
 runtime
 WireMock
 Shinkansen
@@ -48,8 +48,11 @@ QA
 Nikko
 assertThat
 VCS
+socracan
+artifactory
 disassembler
 Shibuya
+HTTPie
 durations
 stdout
 DSL
@@ -82,8 +85,8 @@ Grafana
 ajax
 Connascence
 JavaFX
-Unirest
 fakeAsync
+Unirest
 SoCraTes
 CoffeeScript
 Ethereum
@@ -111,6 +114,5 @@ Hyperdia
 StringBuilder
 json
 Weirich
-HTTPie
-artifactory
-socracan
+Kotlin
+Coursera
