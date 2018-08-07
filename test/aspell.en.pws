@@ -1,4 +1,4 @@
-personal_ws-1.1 en 115 
+personal_ws-1.1 en 120 
 runtime
 WireMock
 Shinkansen
@@ -6,6 +6,7 @@ Meetup
 Osherove
 assertEquals
 StringBuffer
+Quickcheck
 SHA
 Hevery
 untestable
@@ -20,6 +21,7 @@ freemarker
 AssertJ
 UUID
 RPC
+Monoid
 matchers
 IMDB
 Misko
@@ -28,6 +30,7 @@ CDCT
 userId
 testability
 cryptocurrency
+peasy
 Wikivoyage
 Pryce
 endsWith
@@ -38,6 +41,7 @@ CRM
 JVM
 doesn
 Kata
+Kotlin
 reflog
 blockLAB
 Fieldings
@@ -57,6 +61,7 @@ durations
 stdout
 DSL
 javadoc
+Coursera
 Akihabara
 Canaria
 blockchain
@@ -114,5 +119,3 @@ Hyperdia
 StringBuilder
 json
 Weirich
-Kotlin
-Coursera
