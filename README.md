@@ -16,6 +16,12 @@ Make site available at [http://localhost:4000](http://localhost:4000)
 
     ./test/spell_checker.sh
 
+## Graphviz files
+
+Generate svgs via
+
+    dot -Tsvg input.gv -o output.svg
+
 ## Troubleshooting
 ### Nokogiri install fails on OSX during bundle install
 
