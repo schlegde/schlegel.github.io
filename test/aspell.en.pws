@@ -1,4 +1,4 @@
-personal_ws-1.1 en 120 
+personal_ws-1.1 en 129 
 runtime
 WireMock
 Shinkansen
@@ -31,6 +31,7 @@ userId
 testability
 cryptocurrency
 peasy
+QUnit
 Wikivoyage
 Pryce
 endsWith
@@ -53,16 +54,19 @@ Nikko
 assertThat
 VCS
 socracan
+shadowRoot
 artifactory
 disassembler
 Shibuya
 HTTPie
 durations
 stdout
+Angular
 DSL
 javadoc
 Coursera
 Akihabara
+AngularJS
 Canaria
 blockchain
 matcher
@@ -71,6 +75,7 @@ Yokohama
 Axel
 screencast
 bytecode
+Postel
 Karlsruhe
 JUnit
 Sandi
@@ -82,6 +87,7 @@ microservices
 APIs
 API's
 ABI
+BusConf
 URI
 codebase
 getBytes
@@ -90,8 +96,9 @@ Grafana
 ajax
 Connascence
 JavaFX
-fakeAsync
 Unirest
+fakeAsync
+Kriesing
 SoCraTes
 CoffeeScript
 Ethereum
@@ -117,5 +124,7 @@ san
 OAuth
 Hyperdia
 StringBuilder
+testDone
+testStart
 json
 Weirich
