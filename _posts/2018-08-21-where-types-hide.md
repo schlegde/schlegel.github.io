@@ -13,7 +13,8 @@ Recently I came across something similar to the following piece of code
 fun doSthWith(segment: List<Int>) {
     Assert.isTrue(segment.size == 3,
       "Segment needs to have a size of exactly 3")
-    // Some logic 
+
+    // Some logic follows
 }
 {% endhighlight %}
 
@@ -43,11 +44,11 @@ The brevity of the Kotlin class should swiftly deal with the well known
 
 argument.
 
-We can evolve our function to
+We can evolve our function into
 
 {% highlight kotlin %}
 fun doSthWith(segment: ThreeItemSegment) {
-    // some logic
+    // Some logic follows
 }
 {% endhighlight %}
 
