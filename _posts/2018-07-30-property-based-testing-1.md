@@ -176,7 +176,7 @@ public static int add(int a, int b) {
 }
 {% endhighlight %}
 
-Voilà
+Voila
 
 ### No one homebrews their own add function
 
