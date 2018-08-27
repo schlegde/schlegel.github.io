@@ -1,4 +1,4 @@
-personal_ws-1.1 en 130 
+personal_ws-1.1 en 135 
 runtime
 WireMock
 Shinkansen
@@ -7,9 +7,11 @@ Osherove
 assertEquals
 StringBuffer
 Quickcheck
+iOS
 SHA
 Hevery
 untestable
+unconference
 Searls
 submodule
 fixies
@@ -34,6 +36,7 @@ peasy
 QUnit
 Wikivoyage
 Pryce
+aeropress
 endsWith
 toUpperCase
 Metz
@@ -44,6 +47,7 @@ doesn
 Kata
 Kotlin
 reflog
+DOM
 blockLAB
 Fieldings
 microservice
@@ -87,6 +91,7 @@ microservices
 APIs
 API's
 ABI
+Kanban
 BusConf
 URI
 codebase
