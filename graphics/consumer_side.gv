@@ -1,0 +1,8 @@
+digraph {
+  rankdir=LR;
+  Contracts->Stubs [label = "generate"]
+  Client->Stubs [label = "test is using"]
+  Contracts [shape=note];
+  Stubs [shape=box];
+  Client [shape=box];
+}

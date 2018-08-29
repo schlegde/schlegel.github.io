@@ -1,0 +1,8 @@
+digraph {
+  rankdir=LR;
+  Contracts->Tests [label = "generate"]
+  Tests->Provider [label = "verify"]
+  Contracts [shape=note];
+  Tests [shape=box];
+  Provider [shape=box];
+}
