@@ -9,7 +9,7 @@ My page at
 
 ## Setup Fedora
 
-    dnf install ruby-devel gcc-c++ aspell
+    dnf install ruby-devel gcc-c++ aspell aspell-en tidy-html5
     gem install bundler
     bundle install
 

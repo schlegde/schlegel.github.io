@@ -16,7 +16,7 @@ for f in $(find _site -name '*.html'); do
     sed -e '/<code>/ { N; d; }' | \
     # remove all lines that start with a html tag
     grep -v '^<' | \
-    aspell --ignore=2 -p ./test/aspell.en.pws pipe | \
+    aspell --ignore=3 -p ./test/aspell.en.pws pipe | \
     grep '^&'
   if [ $? -ne 1 ]; then
     ((spelling_errors++))
