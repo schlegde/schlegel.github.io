@@ -1,9 +1,15 @@
 My page at
 [hodler.co](http://hodler.co)
 
-## Setup
+## Setup macOS
 
     brew install rbenv tidy-html5 aspell
+    gem install bundler
+    bundle install
+
+## Setup Fedora
+
+    dnf install ruby-devel gcc-c++ aspell
     gem install bundler
     bundle install
 
