@@ -3,7 +3,7 @@ title: About - Axel Hodler
 layout: page
 permalink: /about/
 ---
-Hi, I'm Axel, located in [Stuttgart](http://en.wikipedia.org/wiki/Stuttgart) and I [code](https://github.com/axelhodler).
+Hi there! I'm Axel. I solve problems. If possible with [code](https://github.com/axelhodler).
 
 Both in life and during software development I enjoy short feedback loops, doing what works, ditching what does not and trying to find out how to improve.
 
