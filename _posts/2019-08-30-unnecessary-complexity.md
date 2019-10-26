@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Unnecessary complexity for the sake of asking for unnecessary personal data"
+title: "Unnecessary complexity"
 date:   2019-08-30 14:21:24
 description: ""
 category:
