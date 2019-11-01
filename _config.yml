@@ -10,12 +10,21 @@ markdown:           kramdown
 
 # Navigation
 nav:
+  - name:           "Blog"
+    href:           "/"
+  - name:           "Books"
+    href:           "/books"
   - name:           "About"
     href:           "/about"
 
 # Sass
 sass:
   style:            :compressed
+
+collections:
+  books:
+    output: true
+
 
 # Scopes
 defaults:

@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<div class="content post about-page-scrollbar-visible">
+{{ content }}
+{% for book in site.books %}
+  <div class="list-item">
+    <h2 class="list-post-title">
+      <a href="{{ site.baseurl }}{{ book.url }}">{{ book.title }}</a>
+    </h2>
+    <div class="list-post-date">
+    </div>
+  </div>
+{% endfor %}
+</div>
+
