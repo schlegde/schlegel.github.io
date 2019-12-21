@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Measure What Matters - John Doerr"
+year: 2019
 ---
 
 A book on OKR and their usage in companies such as Intel, Google (Youtube), Coursera, Zume Pizza and more.
