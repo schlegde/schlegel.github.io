@@ -3,7 +3,8 @@ layout: default
 ---
 <div class="content post about-page-scrollbar-visible">
 {{ content }}
-{% for book in site.books %}
+{% assign sorted = site.books | sort: 'year' | reverse %}
+{% for book in sorted %}
   <div class="list-item">
     <h2 class="list-post-title">
       <a href="{{ site.baseurl }}{{ book.url }}">{{ book.title }}</a>
