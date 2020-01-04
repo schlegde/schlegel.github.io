@@ -4,7 +4,11 @@ year: 2020
 title: "Skunk Works: A Personal Memoir of My Years at Lockheed - Ben R. Rich"
 ---
 
-The book follows the development and construction of the Lockheed [F-117 Nighthawk](https://en.wikipedia.org/wiki/Lockheed_F-117_Nighthawk) a stealth attack aircraft with a unique shape.
+The book follows the development, construction and usage of multiple Lockheed aircraft from personal memories.
+
+It starts with the Lockheed [F-117 Nighthawk](https://en.wikipedia.org/wiki/Lockheed_F-117_Nighthawk). A stealth attack aircraft.
+
+<img src="https://www.dropbox.com/s/ziccx3hnjjfckpu/f117.jpg?raw=1" alt="f117" />
 
 The F-117 consists of flat triangular shapes because the software back then was only able to calculate the radar cross section of a given configuration if it's in two dimensions. That's why the [B-2 Spirit](https://en.wikipedia.org/wiki/Northrop_Grumman_B-2_Spirit), a later stealth aircraft, has some rounded shapes due to improved software. Context: The radar return from an object is related to its edge configuration, not its size.
 
