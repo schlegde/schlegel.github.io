@@ -30,6 +30,10 @@ Generate svgs via
 
     dot -Tsvg input.gv -o output.svg
 
+## Preview pictures
+
+Should have a height of 300 pixels.
+
 ## Troubleshooting
 ### Nokogiri install fails on OSX during bundle install
 
