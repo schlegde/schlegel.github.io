@@ -18,7 +18,7 @@ No impressum because its a private page.
 ## Running Jekyll
 Make site available at [http://localhost:4000](http://localhost:4000)
 
-    ./run.sh
+    ./bin/run.sh
 
 ## Running tests
 
