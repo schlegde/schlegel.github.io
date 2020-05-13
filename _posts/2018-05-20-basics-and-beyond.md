@@ -140,3 +140,5 @@ We recognize the classic [Arrange-Act-Assert](http://wiki.c2.com/?ArrangeActAsse
 * __Assert__: We verify whether it still exists with `test`
 
 Thus what seemed like an innocent bracket `[` helps to make sure the foundations we build upon run smoothly.
+
+Article has been cross-posted on [Medium](https://medium.com/@axelhodler/demystifying-a-common-shell-script-8a566959391e)
